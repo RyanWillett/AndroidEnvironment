@@ -6,4 +6,39 @@ public class ParseUser {
 		return new ParseUser();
 	}
 
+	public static void logOut() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void logInInBackground(String username, String password, LogInCallback logInCallback) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setUsername(String lowerCase) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setEmail(String email) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setPassword(String password) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void signUpInBackground(SignUpCallback signUpCallback) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

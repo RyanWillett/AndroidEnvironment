@@ -7,10 +7,10 @@ import android.app.Environment;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import voss.logic.Narrator;
-import voss.packaging.Box;
-import voss.packaging.Deliverer;
-import voss.packaging.Packager;
+import voss.shared.logic.Narrator;
+import voss.shared.packaging.Box;
+import voss.shared.packaging.Deliverer;
+import voss.shared.packaging.Packager;
 
 public class Intent {
 

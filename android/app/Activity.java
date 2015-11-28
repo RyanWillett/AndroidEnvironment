@@ -24,7 +24,7 @@ import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import voss.android.R;
-import voss.logic.Narrator;
+import voss.shared.logic.Narrator;
 
 public abstract class Activity extends ContextThemeWrapper{
 	
@@ -72,9 +72,9 @@ public abstract class Activity extends ContextThemeWrapper{
 		
 		addTextView(R.id.home_join);
 		addTextView(R.id.home_host);
-		addTextView(R.id.home_login);
+		addTextView(R.id.home_loginButton);
 		addTextView(R.id.home_tutorial);
-		addTextView(R.id.home_settings);
+		addTextView(R.id.home_currentGames);
 
 		addRecyclerView(R.id.day_playerNavigationPane);
 

@@ -3,7 +3,7 @@ package android.app;
 import java.util.HashMap;
 
 import android.content.Intent;
-import voss.logic.Narrator;
+import voss.shared.logic.Narrator;
 
 public class Environment {
 

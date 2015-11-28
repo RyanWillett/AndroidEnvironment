@@ -5,10 +5,10 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-import voss.logic.Narrator;
-import voss.logic.support.CommunicatorHandler;
-import voss.packaging.Box;
-import voss.packaging.Packager;
+import voss.shared.logic.Narrator;
+import voss.shared.logic.support.CommunicatorHandler;
+import voss.shared.packaging.Box;
+import voss.shared.packaging.Packager;
 
 
 public class Parcel {

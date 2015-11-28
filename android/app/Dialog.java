@@ -12,4 +12,8 @@ public class Dialog {
 		
 	}
 
+	public void cancel() {
+		
+	}
+
 }

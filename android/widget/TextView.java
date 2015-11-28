@@ -1,7 +1,5 @@
 package android.widget;
 
-import android.app.Activity;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.View;
 
@@ -13,7 +11,6 @@ public class TextView extends View{
 	}
 
 	public void setTypeface(Typeface font) {
-		// TODO Auto-generated method stub
 		
 	}
 
@@ -22,13 +19,16 @@ public class TextView extends View{
 	}
 
 	public void setTextColor(int parseColor) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	private String text;
 	public void setText(String replace) {
 		this.text = replace;
+	}
+
+	public void setTextSize(Float textSize) {
+		
 	}
 
 }
