@@ -13,10 +13,12 @@ public class DrawerLayout extends View{
 	}
 
 	public interface DrawerListener{
+		void onDrawerClosed(View v);
 	}
 
-	public void setDrawerListener(DrawerListener activityDay) {
-		
+	DrawerListener dl;
+	public void setDrawerListener(DrawerListener dl) {
+		this.dl = dl;
 	}
 
 	public void setDrawerLockMode(int lockModeLockedClosed) {
@@ -28,6 +30,6 @@ public class DrawerLayout extends View{
 	}
 
 	public void closeDrawer(RecyclerView playerMenu) {
-		
+		dl.onDrawerClosed(null);
 	}
 }

@@ -1,6 +1,11 @@
 package android.content;
 
+import java.util.ArrayList;
+
+import android.app.Environment;
+import android.app.Service;
 import android.content.res.Resources;
+import android.net.wifi.WifiManager;
 
 public class Context{
 
@@ -16,5 +21,32 @@ public class Context{
 		
 		
 	}
+	
+	public void startService(Intent intent) {
+		Service c = e.startService(intent.c1, intent);
+		c.onStartCommand(intent, 0, 0);
+	}
 
+	private ArrayList<Service> services = new ArrayList<Service>();
+	public void bindService(Intent intent, ServiceConnection sC, int bindAutoCreate) {
+		Service s = e.getService(intent.c1);
+		services.add(s);
+		sC.onServiceConnected(null, s.onBind(intent));
+	}
+
+	public void unbindService(ServiceConnection sC) {
+		
+	}
+
+	private Environment e;
+	public void setEnv(Environment e){
+		this.e = e;
+	}
+	public Environment getEnvironment() {
+		return e;
+	}
+	
+	public WifiManager getSystemService(int i) {
+		return new WifiManager();
+	}
 }

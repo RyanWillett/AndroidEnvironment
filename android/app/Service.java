@@ -1,20 +1,14 @@
 package android.app;
 
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.os.IBinder;
-import android.app.Environment;
 
-public abstract class Service {
+public abstract class Service extends ContextWrapper{
 
 	public abstract IBinder onBind(Intent i);
 	
 	public static final int START_STICKY = 0;
-
-	private Environment e;
-	public void setEnv(Environment environment) {
-		e = environment;
-		
-	}
 	
 	private Intent intent;
 	public void setIntent(Intent intent) {

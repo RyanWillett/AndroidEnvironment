@@ -6,7 +6,7 @@ public class Toast {
 	public static final int LENGTH_SHORT = 0;
 
 	public static Toast makeText(Object baseContext, String s, int lengthLong) {
-		System.out.println("TOAST \t" + s);
+		//System.out.println("TOAST \t" + s);
 		return new Toast();
 	}
 

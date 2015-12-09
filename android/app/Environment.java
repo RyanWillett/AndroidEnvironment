@@ -7,6 +7,10 @@ import voss.shared.logic.Narrator;
 
 public class Environment {
 
+	public Environment(){
+		
+	}
+	
 	private int i = -1;
 	private Activity a;
 	public Activity startActivity(Class<?> class1, Intent i) {
@@ -34,12 +38,12 @@ public class Environment {
 		return a;
 	}
 
-	public Narrator getNarrator() {
-		return a.getNarrator();
-	}
+	
 
-	private HashMap<Class<?>, Service> services = new HashMap<>();
+	public HashMap<Class<?>, Service> services = new HashMap<>();
 	public Service startService(Class<?> class1, Intent intent) {
+		if(services.containsKey(class1))
+			return services.get(class1);
 		String name = class1.getName();
 		try {
 			Service s = (Service) Class.forName(name).newInstance();

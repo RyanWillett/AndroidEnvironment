@@ -2,7 +2,6 @@ package android.view;
 
 import java.util.HashMap;
 
-import android.app.ID;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;

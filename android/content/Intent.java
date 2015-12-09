@@ -2,21 +2,16 @@ package android.content;
 
 import java.util.HashMap;
 
-import android.app.Activity;
 import android.app.Environment;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import voss.shared.logic.Narrator;
-import voss.shared.packaging.Box;
-import voss.shared.packaging.Deliverer;
-import voss.shared.packaging.Packager;
 
 public class Intent {
 
-	public Activity a;
+	public Context a;
 	public Class<?> c1;
-	public Intent(Activity a, Class<?> class1) {
+	public Intent(Context a, Class<?> class1) {
 		this();
 		this.a = a;	
 		this.c1 = class1;

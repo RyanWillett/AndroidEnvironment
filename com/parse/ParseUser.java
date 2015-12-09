@@ -3,7 +3,7 @@ package com.parse;
 public class ParseUser {
 
 	public static ParseUser getCurrentUser() {
-		return new ParseUser();
+		return null;
 	}
 
 	public static void logOut() {

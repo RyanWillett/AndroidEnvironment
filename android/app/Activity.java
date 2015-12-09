@@ -1,13 +1,11 @@
 package android.app;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -29,15 +27,12 @@ import voss.shared.logic.Narrator;
 public abstract class Activity extends ContextThemeWrapper{
 	
 	public static final int WIFI_SERVICE = 0;
-	private Environment e;
+	
 	
 	public Activity(){
 		
 	}
 	
-	public void setEnv(Environment e){
-		this.e = e;
-	}
 	
 	protected void requestWindowFeature(int featureNoTitle) {
 		
@@ -72,7 +67,7 @@ public abstract class Activity extends ContextThemeWrapper{
 		
 		addTextView(R.id.home_join);
 		addTextView(R.id.home_host);
-		addTextView(R.id.home_loginButton);
+		addTextView(R.id.home_login_signup);
 		addTextView(R.id.home_tutorial);
 		addTextView(R.id.home_currentGames);
 
@@ -201,30 +196,11 @@ public abstract class Activity extends ContextThemeWrapper{
 		return this;
 	}
 
-	public Environment getEnvironment() {
-		return e;
-	}
+	
 
-	public WifiManager getSystemService(int i) {
-		return new WifiManager();
-	}
+	
 
-	public void startService(Intent intent) {
-		Service c = e.startService(intent.c1, intent);
-		c.onStartCommand(intent, 0, 0);
-		
-	}
-
-	private ArrayList<Service> services = new ArrayList<Service>();
-	public void bindService(Intent intent, ServiceConnection sC, int bindAutoCreate) {
-		Service s = e.getService(intent.c1);
-		services.add(s);
-		sC.onServiceConnected(null, s.onBind(intent));
-	}
-
-	public void unbindService(ServiceConnection sC) {
-		
-	}
+	
 
 	private Intent intent;
 	public void setIntent(Intent i) {
@@ -237,7 +213,7 @@ public abstract class Activity extends ContextThemeWrapper{
 	
 	
 	
-	protected void registerReceiver(BroadcastReceiver intentReceiver2, IntentFilter iF2) {
+	public void registerReceiver(BroadcastReceiver intentReceiver2, IntentFilter iF2) {
 		
 	}
 

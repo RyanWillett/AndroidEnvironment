@@ -19,8 +19,9 @@ public class ListView extends View{
 		
 	}
 
+	boolean[] checkedItems;
 	public void setAdapter(BaseAdapter listingAdapter) {
-		
+		checkedItems = new boolean[listingAdapter.getCount()];
 	}
 
 	public void setOnItemClickListener(OnItemClickListener o){
@@ -48,12 +49,16 @@ public class ListView extends View{
 		
 	}
 
-	public void setItemChecked(int indexOf, boolean b) {
-		
+	public void setItemChecked(int index, boolean b) {
+		checkedItems[index] = b;
 	}
 
 	public android.view.ViewGroup.LayoutParams getLayoutParams() {
 		return new android.view.ViewGroup.LayoutParams();
+	}
+
+	public boolean[] getCheckedItemPositions() {
+		return checkedItems;
 	}
 
 }
