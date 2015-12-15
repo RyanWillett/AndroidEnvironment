@@ -1,5 +1,6 @@
 package android.widget;
 
+import android.util.SparseBooleanArray;
 import android.view.View;
 import android.widget.AdapterView.OnItemClickListener;
 
@@ -19,9 +20,9 @@ public class ListView extends View{
 		
 	}
 
-	boolean[] checkedItems;
+	SparseBooleanArray checkedItems;
 	public void setAdapter(BaseAdapter listingAdapter) {
-		checkedItems = new boolean[listingAdapter.getCount()];
+		checkedItems = new SparseBooleanArray(listingAdapter.getCount());
 	}
 
 	public void setOnItemClickListener(OnItemClickListener o){
@@ -50,14 +51,14 @@ public class ListView extends View{
 	}
 
 	public void setItemChecked(int index, boolean b) {
-		checkedItems[index] = b;
+		checkedItems.put(index, b);
 	}
 
 	public android.view.ViewGroup.LayoutParams getLayoutParams() {
 		return new android.view.ViewGroup.LayoutParams();
 	}
 
-	public boolean[] getCheckedItemPositions() {
+	public SparseBooleanArray getCheckedItemPositions() {
 		return checkedItems;
 	}
 
