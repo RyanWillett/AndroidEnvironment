@@ -9,7 +9,7 @@ public class EditText extends View{
 		super(i);
 	}
 
-	String text;
+	private String text;
 	public void setText(String name) {
 		text = name;
 		
@@ -20,13 +20,15 @@ public class EditText extends View{
 	}
 
 	public void addTextChangedListener(TextWatcher textWatcher) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	public void setInputType(int typeClassPhone) {
-		// TODO Auto-generated method stub
 		
+	}
+
+	public int length() {
+		return text.length();
 	}
 
 }

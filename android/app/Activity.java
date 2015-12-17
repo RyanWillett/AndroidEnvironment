@@ -33,6 +33,9 @@ public abstract class Activity extends ContextThemeWrapper{
 		
 	}
 	
+	public void setRequestedOrientation(int i){
+		
+	}
 	
 	protected void requestWindowFeature(int featureNoTitle) {
 		
