@@ -81,4 +81,9 @@ public class Intent {
 		
 	}
 
+	public boolean hasExtra(String id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

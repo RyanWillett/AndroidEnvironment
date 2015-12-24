@@ -46,7 +46,7 @@ public class Context{
 		return e;
 	}
 	
-	public WifiManager getSystemService(int i) {
+	public Object getSystemService(int i) {
 		return new WifiManager();
 	}
 }

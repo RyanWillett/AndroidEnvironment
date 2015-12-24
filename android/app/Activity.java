@@ -27,6 +27,7 @@ import voss.shared.logic.Narrator;
 public abstract class Activity extends ContextThemeWrapper{
 	
 	public static final int WIFI_SERVICE = 0;
+	public static final int NOTIFICATION_SERVICE = 1;
 	
 	
 	public Activity(){

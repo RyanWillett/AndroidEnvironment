@@ -16,4 +16,8 @@ public class Button extends View{
 		
 	}
 
+	public void setTextColor(int parseColor) {
+		
+	}
+
 }

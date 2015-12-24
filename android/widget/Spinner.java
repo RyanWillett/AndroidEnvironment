@@ -34,6 +34,11 @@ public class Spinner extends View{
 	public void setSelection(int id) {
 		index = id;
 	}
+
+	public void setGravity(int center) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }

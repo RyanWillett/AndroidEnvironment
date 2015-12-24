@@ -8,9 +8,14 @@ public class JSONObject {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Parcelable getString(String string) {
+	public String getString(String string) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public boolean has(String string) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
