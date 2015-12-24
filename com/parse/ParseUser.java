@@ -41,4 +41,9 @@ public class ParseUser {
 		return null;
 	}
 
+	public static void logIn(String username, String password) throws ParseException {
+		
+		
+	}
+
 }

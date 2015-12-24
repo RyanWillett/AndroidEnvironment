@@ -64,4 +64,9 @@ public class ParseObject {
 		
 	}
 
+	public void saveInBackground() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
