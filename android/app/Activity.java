@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -221,5 +222,16 @@ public abstract class Activity extends ContextThemeWrapper{
 		
 	}
 
+	public void onDestroy() {
+		
+	}
+	protected Object getPackageName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	protected PackageManager getPackageManager() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	public abstract Narrator getNarrator();
 }
