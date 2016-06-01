@@ -51,4 +51,11 @@ public class EditText extends View{
 		
 	}
 
+	
+
+	public void removeTextChangedListener(TextWatcher textWatcher) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

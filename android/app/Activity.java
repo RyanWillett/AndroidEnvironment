@@ -22,8 +22,8 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import voss.android.R;
-import voss.shared.logic.Narrator;
+import voss.narrator.R;
+import shared.logic.Narrator;
 
 public abstract class Activity extends ContextThemeWrapper{
 	

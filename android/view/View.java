@@ -29,6 +29,9 @@ public class View {
 		return id;
 	}
 
+	public void setEnabled(boolean isHost) {
+		
+	}
 	
 	public HashMap<Integer, View> map = new HashMap<Integer, View>();
 	public View findViewById(int homeNameet) {

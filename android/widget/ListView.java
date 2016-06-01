@@ -4,7 +4,7 @@ import android.util.SparseBooleanArray;
 import android.view.View;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class ListView extends View{
+public class ListView extends AdapterView{
 
 	public static final int TRANSCRIPT_MODE_NORMAL = 3;
 

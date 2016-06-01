@@ -14,4 +14,9 @@ public class Toast {
 		
 	}
 
+	public void cancel() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

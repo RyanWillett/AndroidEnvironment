@@ -1,6 +1,6 @@
 package android.view;
 
-import voss.android.R;
+import voss.narrator.R;
 
 public class LayoutInflater {
 
